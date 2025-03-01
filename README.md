@@ -28,9 +28,3 @@ This repository contains the backend API for the Task Manager application. The A
 - Node.js and npm installed.
 - A MongoDB connection string (local or remote).
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <your-backend-repo-url>
-   cd task-manager-backend
