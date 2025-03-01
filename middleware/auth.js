@@ -9,7 +9,6 @@ module.exports = function(req, res, next) {
     return res.status(401).json({ message: 'No token, authorization denied' });
 
   try {
-    // Expecting header format: "Bearer <token>"
     const decoded = jwt.verify(token.split(" ")[1], process.env.JWT_SECRET);
     req.user = decoded.user;
     next();
